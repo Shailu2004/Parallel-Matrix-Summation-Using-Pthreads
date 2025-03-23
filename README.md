@@ -82,6 +82,21 @@ Ensure you have a C++ compiler that supports C++11 (or later) and that the pthre
 ```bash
 g++ source_code.cpp -o binary_file ( for compile ) 
 ./binary_file ( for running the code ) 
+
+## Follow these interactive prompts:
+
+Matrix Size:
+Enter the size (N) of the matrix.
+
+Input Mode:
+Choose 1 for manual input (you will be prompted to enter each element).
+Choose 2 for random generation (the program will generate and display a random matrix).
+
+Thread Count:
+Enter the number of threads to use (must be between 1 and N).
+
+The program will display the matrix (if generated), the thread assignments, the total sum of the matrix, and the execution time.
+
 ```
 ## Limitations
 
