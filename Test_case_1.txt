@@ -1,0 +1,30 @@
+Test Case 1: Manual Input Test
+Scenario:
+The user manually enters the matrix values.
+
+Input:
+Matrix Size (N): 3
+Input Mode: 1 (Manual Input)
+
+Matrix Elements:
+
+Row 0: 1, 2, 3
+Row 1: 4, 5, 6
+Row 2: 7, 8, 9
+
+Number of Threads: 2
+
+Expected Behavior:
+The program validates that 3 is a valid matrix size.
+For manual input, it prompts for each element; if the user enters non-numeric input, the program will re-prompt until valid integers are provided.
+The matrix is stored as:
+
+1 2 3
+4 5 6
+7 8 9
+
+The program then asks for the number of threads and ensures the user enters a valid number (between 1 and 3). 
+With 2 threads, one thread might be assigned rows 0-1 and the other thread row 2.
+
+The computed total sum is 45.
+The program displays the thread assignments, total sum, and the execution time.

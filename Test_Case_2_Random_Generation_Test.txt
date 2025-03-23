@@ -1,0 +1,27 @@
+Test Case 2: Random Generation Test with Error Handling
+Scenario:
+The user uses the random generation option and tests error handling by entering non-numeric values.
+
+Input:
+Matrix Size (N): 5
+(During input, if a non-numeric value is entered, the program will prompt again until a valid integer is given.)
+
+Input Mode: 2 (Random Generation)
+
+Number of Threads:
+
+First attempt: enter a non-numeric value (e.g., "abc").
+Then enter a valid value within the range, e.g., 3.
+
+Expected Behavior:
+The program will prompt for matrix size and re-prompt until a valid numeric value is provided.
+For random generation, the program automatically fills a 5×5 matrix with random numbers between 0 and 99 and prints the generated matrix.
+When prompted for the number of threads, if a non-numeric value (or an invalid number outside the range 1 to 5) is entered, the program will clear the input error and re-prompt until a valid number (e.g., 3) is provided.
+
+The matrix rows are divided among 3 threads. The assignment might be:
+
+Thread 0: 2 rows
+Thread 1: 2 rows
+Thread 2: 1 row
+
+The program computes the total sum of all matrix elements, displays the thread assignments, the total sum, and the execution time.
