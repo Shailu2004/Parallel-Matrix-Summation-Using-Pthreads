@@ -9,6 +9,11 @@ This project implements a parallel matrix summation program in C++ using pthread
 - **Execution Time Reporting:** Measures and reports the total time taken for computation.
 - **Robust Error Handling:** Validates user input to ensure that only valid integers are accepted for matrix size, matrix elements, and thread count.
 
+## What is Pthread?
+
+Pthreads (POSIX threads) is a standardized API for multi-threading in POSIX-compliant operating systems. It allows developers to create, manage, and synchronize multiple threads within a process, enabling parallel execution of tasks. This facilitates efficient utilization of multi-core processors by allowing concurrent processing, which can improve performance for compute-intensive applications.
+
+
 ## Features
 - **Multi-threading:** Implements parallel summation using pthreads.
 - **Flexible Input Options:** Supports both manual input and random generation of matrix elements.
