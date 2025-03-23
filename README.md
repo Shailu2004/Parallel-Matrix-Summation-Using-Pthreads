@@ -80,5 +80,13 @@ This project implements a parallel matrix summation program in C++ using pthread
 Ensure you have a C++ compiler that supports C++11 (or later) and that the pthreads library is installed. To compile the program, run:
 
 ```bash
-g++ m_p.cpp -o binary_file ( for compile ) 
+g++ source_code.cpp -o binary_file ( for compile ) 
 ./binary_file ( for running the code ) 
+```
+## Limitations
+
+**Platform Dependency:**
+  - This solution uses pthreads and is designed for POSIX-compliant systems (Linux, macOS, etc.).
+
+**Input Validation:**
+  - The program robustly handles non-numeric inputs by re-prompting the user, but it assumes that the user will eventually provide valid data.
